@@ -1,0 +1,8 @@
+node {
+    stage('version') {
+    git 'https://github.com/chitanyadevops/java.git'
+    }
+stage('build'){
+    sh 'mvn compile'
+}
+}
