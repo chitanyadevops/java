@@ -5,7 +5,7 @@ agent any
     stage('pull repo')
       {
         steps {
-          git credentialsId: 'gitcreden', url: 'https://github.com/chitanyadevops/java.git'
+          git credentialsId: 'Gitlatest', url: 'https://github.com/chitanyadevops/java.git'
           }
           }
     stage('BUild')
