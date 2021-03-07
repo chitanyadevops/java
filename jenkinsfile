@@ -1,8 +1,18 @@
-node {
-    stage('version') {
-    git 'https://github.com/chitanyadevops/java.git'
+pipeline
+{
+agent any
+  stages {
+    stage('pull repo')
+      {
+        steps {
+          git 'https://github.com/chitanyadevops/Sonarqubecheck.git'
+          }
+          }
+    stage('BUild')
+    {
+    steps{
+    cmd 'mvn clean install'
     }
-stage('build'){
-    sh 'mvn compile'
-}
-}
+    }
+    }
+ }
