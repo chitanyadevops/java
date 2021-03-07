@@ -11,7 +11,7 @@ agent any
     stage('BUild')
     {
     steps{
-    sh "mvn clean install"
+    cmd "mvn clean install"
     }
     }
     }
