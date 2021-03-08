@@ -1,6 +1,7 @@
 pipeline
 {
 agent any
+PATH="D:\Maven\apache-maven-3.5.0\bin:$PATH"
   stages {
     stage('pull repo')
       {
